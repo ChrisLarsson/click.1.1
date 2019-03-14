@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="style.css">
+
+<head>
+
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <div id="titles">
+    <h1>Clicker Alpha version 1.1</h1>
+
+    <h4 id="coins"></h4>
+    <h6 id="coinsPS"></h4>
+    </div>
+
+
+
+
+    <!-- <a href="javascript:;" onClick="document.getElementById('hideaway').style.display='none';">Hide content again</a> -->
+</head>
+<body>
+<div id="master">
+
+
+<article id="showCoins">
+</article>
+
+
+<article id="showPS">
+</article>
+
+
+<article id="showPC">
+</article>
+
+<article id="tester">
+</article>
+
+
+<!--
+
+<button id="addPoint" onclick="addPoint(1)">Add</button> -->
+
+
+  <div class="container">
+
+
+
+<button id="addPoint" onclick="addPoint()">Add coin</button>
+
+
+  <section id="storeContainer">
+
+  <article id="buildingContainer">
+    <h2>UPGRADE STORE</h2>
+    <button id="upgradeButton" onclick="gainTencoinsPerSecond()">1 Coin per Second<br><br>Cost: 10 coins</button>
+    <button id="upgradeButton" onclick="gainTwentycoinsPerSecond()">5 Coins per Second<br><br>Cost: 50 coins</button>
+    <button id="upgradeButton" onclick="gainFiftycoinsPerSecond()">50 Coins per Second<br><br>Cost: 500 coins</button>
+  </article>
+    <article id="researchContainer">
+  <h2>!</h2>
+    <button id="upgradeButton" onclick="increaseAddPointWithTwo()">Clicking power increased with two coins<br><br>Cost: 10 coins</button>
+    <button id="upgradeButton" onclick="increaseAddPointWithTen()">Clicking power increased with ten coins<br><br>Cost: 600 coins</button>
+    <button id="upgradeButton" onclick="increaseAddPointWithFifty()">Clicking power increased with fifty coins<br><br>Cost: 2000 coins</button>
+  </article>
+
+  </section>
+
+    </div>
+
+    <article id="lackCoins">You lack coins for that purchase! <br> <button id="errorButton" onclick="closeWin()">Got it!</button> </article>
+
+    <!-- <section id="Inloggruta">
+        Username:<br>
+        <input id="username" , type="text" name="firstname" value=""> Password:
+        <br>
+        <input id="password" , type="text" name="password" value="">
+        <br>
+
+        <input type="submit" value="Login" onclick="loginFunc()">
+    </section> -->
+
+<button onclick="saveAnswer()">Save</button>
+<button onclick="masterLoad()">Load</button>
+<button onclick="adminCoin()">Gain admin Coin</button>
+</div>
+</body>
+
+
+<script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAT4_K1kLCSEOG91Lrbzg3Q6bwNeQQ4jCw",
+    authDomain: "incremental-project.firebaseapp.com",
+    databaseURL: "https://incremental-project.firebaseio.com",
+    storageBucket: "incremental-project.appspot.com",
+    messagingSenderId: "570432480698"
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+<script src="script.js"></script>
+</html>
